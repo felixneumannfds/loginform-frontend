@@ -1,0 +1,148 @@
+/* author: codemuun */
+/* project: login form amefavibes */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+body {
+    background-image: url("./src/background.jpg");
+    background-size: cover;
+}
+html, body {
+    background-color: var(--background);
+    font-family: 'Space Grotesk', sans-serif;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    margin:5%;
+    border-radius: 15px;
+    z-index: 10;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+:root {
+    --background: #282828;
+    --font: #000000;
+    --accent: grey;
+    --border: #227ca0;
+    --glow: #2261a0;
+    --debug: red;
+}
+
+input {
+    min-width: 20%;
+    min-height: 30px;
+    border-radius: 15px;
+    background-color: var(--background);
+    border-color: var(--glow);
+    border-width: 0;
+    border-bottom-width: 10px;
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+
+}
+button {
+
+    min-width: 200px;
+    min-height: 50px;
+    background-color: var(--glow);
+    color: var(--font);
+    margin-top: 2rem;
+    border-width: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    border-radius: 15px
+}
+@keyframes hoverShine {
+    0%{
+        background-color: white;
+    }
+    100% {
+        background-color: var(--background);
+    }
+}
+button:hover, input:hover {
+    cursor: pointer;
+    animation: hoverShine 5s;
+    background-color: white;
+    color: #2261a0;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 1rem;
+}
+
+label {
+    font-size: 1rem;
+    margin: 2px 2px;
+    padding: 2px 2px;
+}
+
+.App-Login-Title {
+    font-size: 45px;
+    margin:  0.5rem;
+    padding: 0.5rem;
+
+}
+a {
+    font-size: small;
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    overflow: auto;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color:  whitesmoke;
+    text-decoration: none;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 5px 1rem;
+}
+
+/* selected link */
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+textarea:focus, input:focus{
+    border-bottom-width: 0.5rem;
+    border-color: var(--glow);
+    color: var(--font);
+}
+
+#Sector-Space {
+    padding-top: 2rem;
+
+}
+
+.input:empty input:empty {
+    font-size: 5rem;
+}
+
+.container {
+
+    border-color: white;
+    border-width: 5px;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+
+}
+
+form {
+    min-height:50vh;
+    min-width: 60vh;
+}
+
